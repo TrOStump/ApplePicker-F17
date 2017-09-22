@@ -3,7 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Basket : MonoBehaviour {
-
+    public GUIText scoreGT;
+    void Start()
+    {
+        //find a refference to ScoreCounter GameObject
+        GameObject scoreGO = GameObject.Find("ScoreCounter");
+        // get the GUIText Component of that GameObject
+        scoreGT = scoreGO.GetComponent<GUIText>();
+        //set the starting number to zero
+        scoreGT.text = "0";
+    }
     void Update()
     {
         //get the current screen position of the mouse from input
@@ -25,5 +34,18 @@ public class Basket : MonoBehaviour {
         {
             Destroy(collidedwith);
         }
+        //parse the text of ScoreGT into an int
+        int score = int.Parse(scoreGT.text);
+        //add points for catching an apple
+        score += 100;
+        //convert the score back to a string and display it
+        scoreGT.text = score.ToString();
+        //track the high score
+        if (score > HighScore.score)
+        {
+            HighScore.score = score;
+        }
     }
+
+
 }
