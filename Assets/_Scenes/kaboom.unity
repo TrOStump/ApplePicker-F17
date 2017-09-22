@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641252, b: 0.574817, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -108,52 +108,6 @@ NavMeshSettings:
     tileSize: 256
     accuratePlacement: 0
   m_NavMeshData: {fileID: 0}
---- !u!1001 &86291447
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4341385468983532, guid: dafb2cf72927f7d498b4590cf8dcf667, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 9.594
-      objectReference: {fileID: 0}
-    - target: {fileID: 4341385468983532, guid: dafb2cf72927f7d498b4590cf8dcf667, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 1.126
-      objectReference: {fileID: 0}
-    - target: {fileID: 4341385468983532, guid: dafb2cf72927f7d498b4590cf8dcf667, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -4.162
-      objectReference: {fileID: 0}
-    - target: {fileID: 4341385468983532, guid: dafb2cf72927f7d498b4590cf8dcf667, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4341385468983532, guid: dafb2cf72927f7d498b4590cf8dcf667, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4341385468983532, guid: dafb2cf72927f7d498b4590cf8dcf667, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4341385468983532, guid: dafb2cf72927f7d498b4590cf8dcf667, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4341385468983532, guid: dafb2cf72927f7d498b4590cf8dcf667, type: 2}
-      propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1915583011425112, guid: dafb2cf72927f7d498b4590cf8dcf667, type: 2}
-      propertyPath: m_Name
-      value: Apple
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: dafb2cf72927f7d498b4590cf8dcf667, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1 &342026811
 GameObject:
   m_ObjectHideFlags: 0
@@ -166,6 +120,7 @@ GameObject:
   - component: {fileID: 342026814}
   - component: {fileID: 342026813}
   - component: {fileID: 342026812}
+  - component: {fileID: 342026817}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -214,7 +169,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 16
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -237,54 +192,28 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 342026811}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &610291745
-Prefab:
+--- !u!114 &342026817
+MonoBehaviour:
   m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4920750758576054, guid: b384d3a439eb8644ab4bcffceb3d884f, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 5.863772
-      objectReference: {fileID: 0}
-    - target: {fileID: 4920750758576054, guid: b384d3a439eb8644ab4bcffceb3d884f, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0.95327735
-      objectReference: {fileID: 0}
-    - target: {fileID: 4920750758576054, guid: b384d3a439eb8644ab4bcffceb3d884f, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -3.5251763
-      objectReference: {fileID: 0}
-    - target: {fileID: 4920750758576054, guid: b384d3a439eb8644ab4bcffceb3d884f, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4920750758576054, guid: b384d3a439eb8644ab4bcffceb3d884f, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4920750758576054, guid: b384d3a439eb8644ab4bcffceb3d884f, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4920750758576054, guid: b384d3a439eb8644ab4bcffceb3d884f, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4920750758576054, guid: b384d3a439eb8644ab4bcffceb3d884f, type: 2}
-      propertyPath: m_RootOrder
-      value: 4
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: b384d3a439eb8644ab4bcffceb3d884f, type: 2}
-  m_IsPrefabParent: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 342026811}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc5869017ea224e469888b43abf524aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  basketPrefab: {fileID: 1403744003570664, guid: b384d3a439eb8644ab4bcffceb3d884f,
+    type: 2}
+  numBaskets: 3
+  basketBottomY: -14
+  basketSpacingY: 2
 --- !u!1 &614657585
 GameObject:
   m_ObjectHideFlags: 0
@@ -361,7 +290,7 @@ GameObject:
   - component: {fileID: 741903527}
   - component: {fileID: 741903526}
   - component: {fileID: 741903525}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -441,7 +370,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1402305191}
   - component: {fileID: 1402305190}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: AppleTree
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -459,8 +388,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 029239aa234b63d4fa54a3d2f4e94170, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  applePrefab: {fileID: 0}
-  speed: 1
+  applePrefab: {fileID: 1915583011425112, guid: dafb2cf72927f7d498b4590cf8dcf667,
+    type: 2}
+  speed: 5
   LeftAndRightEdge: 10
   changeToChangeDirections: 0.1
   secondBetweenAppleDrops: 1
@@ -490,7 +420,7 @@ GameObject:
   - component: {fileID: 1938735151}
   - component: {fileID: 1938735150}
   - component: {fileID: 1938735149}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Trunk
   m_TagString: Untagged
   m_Icon: {fileID: 0}
